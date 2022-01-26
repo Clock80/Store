@@ -24,29 +24,48 @@
     </div>
   </nav>
   <section id="heroGrid">
-    <div id="featuredProduct" class="heroGridArea">
-      <div id="headline">
-        <section class="relative">
-          <div class="arrow-right">
-            <div class="absolute">
+
+      <!-- This element is 75% of the hero grid -->
+      <div id="primaryProduct" style="background-image: url(images/furniture1.jpg);"></div>
+
+      <!-- Creates a container called 'right-grid' so that I can distribute space for 'secondaryProduct' and 'CTA' -->
+      <!-- This container is 25% of the hero grid -->
+      <div id="right-grid">
+        <div id="secondaryProduct" style="background-image: url(images/furniture2.jpg);">
+        </div>
+        <div id="CTA" class="heroGridArea">
+          <h4>Shop Now</h4>
+          <img src="images/arrow-right.png">
+        </div>
+      </div>
+
+      <!-- Creates a headline container within the heroGrid so that I can display it as a flexbox and 
+      adjust the position of the headline using justify-content and align-items -->
+      <div id="headline-container">
+        <div id="headline">
+          <section class="relative">
+            <div class="arrow-right">
+              <div class="absolute">
+              </div>
             </div>
-          </div>
-        <div style="background-image: url(images/furniture1.jpg);">
-        <h3 id="newCollection">New Collection</h3>
-        <h2>Chairs & Stools</h2>
-        <p>Armchair upholstered in synthetic leather. Powder coated steel legs.</p>
-      </section>
+          <h3 id="newCollection">New Collection</h3>
+          <h2>Chairs & Stools</h2>
+          <p>Armchair upholstered in synthetic leather. Powder coated steel legs.</p>
+        </section>
+        </div>
       </div>
 
 
+
     </div>
-    <div id="secondaryProduct" class="heroGridArea"></div>
-    <div id="CTA" class="heroGridArea">
+    <!-- <div id="secondaryProduct" class="heroGridArea" style="background-image: url(images/furniture2.jpg);"></div> -->
+    <!-- <div id="CTA" class="heroGridArea">
       <h4>Shop Now</h4>
       <img src="images/arrow-right.png">
-    </div>
+    </div> -->
 
   </section>
+
   <div class="subHeading">
     <h3>Shop By Category</h3>
   </div>
